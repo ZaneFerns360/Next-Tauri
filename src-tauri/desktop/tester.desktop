@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Tester
+Comment=A Tauri application
+Exec=/usr/bin/tester
+Icon=/usr/share/icons/128x128@2x.png
+Terminal=false

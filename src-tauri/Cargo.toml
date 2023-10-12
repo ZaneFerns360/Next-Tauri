@@ -24,3 +24,15 @@ tauri = { version = "1.5.1", features = [] }
 # If you use cargo directly instead of tauri's cli you can use this feature flag to switch between tauri's `dev` and `build` modes.
 # DO NOT REMOVE!!
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[package.metadata.generate-rpm]
+name = "tester"
+version = "1.0.0"
+license = "Your License"
+summary = "Your App Summary"
+url = "Your project URL"
+assets = [
+  { source = "target/release/tester", dest = "/usr/bin/tester", mode = "755" },
+  { source = "desktop/tester.desktop", dest = "/usr/share/applications/tester.desktop", mode = "644" },
+]
+
